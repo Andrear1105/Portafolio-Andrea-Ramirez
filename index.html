@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrea Ramírez — Diseñadora Gráfica</title>
+  <meta name="description" content="Diseñadora gráfica y artista especializada en diseño editorial, identidad de marca e ilustración." />
+
+  <!-- Google Fonts: Fraunces (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       CURSOR PERSONALIZADO
+  ============================================================ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <img src="images/logo.svg" alt="Andrea Ramírez" class="nav__logo-img" />
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+      <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+      <li><a href="#contacto" class="nav__link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================================
+       HERO — Portada editorial
+  ============================================================ -->
+  <section class="hero" id="inicio">
+    <div class="hero__eyebrow">
+      <span class="hero__label">Portafolio</span>
+      <span class="hero__line"></span>
+      <span class="hero__year">2026</span>
+    </div>
+
+    <div class="hero__content">
+      <h1 class="hero__name">
+        <span class="hero__name-first">Andrea</span>
+        <span class="hero__name-last">Ramírez<br/>Velázquez</span>
+      </h1>
+
+      <div class="hero__aside">
+        <p class="hero__role">Diseñadora gráfica</p>
+        <p class="hero__tagline">
+          Transformo ideas, historias y conceptos<br/>
+          en experiencias visuales a través del<br/>
+          diseño editorial, la identidad de marca<br/>
+          y la ilustración.
+        </p>
+        <div class="hero__actions">
+          <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn--ghost">Contacto</a>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="hero__image-wrap">
+      <div class="hero__image-placeholder">
+        <img src="images/heros.svg" alt="Andrea Ramírez" class="hero__image" />
+        <div class="hero__image-block"></div>
+      </div>
+    </div>
+
+    <div class="hero__folio">
+      <span>Editorial</span>
+      <span>·</span>
+      <span>Branding</span>
+      <span>·</span>
+      <span>Ilustración</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOBRE MÍ
+  ============================================================ -->
+  <section class="about" id="sobre-mi">
+    <div class="section-header reveal">
+      <span class="section-label">Sobre mí</span>
+    </div>
+
+    <div class="about__grid">
+      <div class="about__photo-col reveal">
+        
+        <div class="about__photo-wrap">
+          <img src="images/perfil.jpg" alt="Andrea Ramírez" class="about__photo" />
+          <div class="about__photo-placeholder"></div>
+        </div>
+        <div class="about__social">
+          <a href="https://instagram.com/andy_rv5" target="_blank" class="about__social-link">Instagram</a>
+          
+          <a href="#" target="_blank" class="about__social-link">LinkedIn</a>
+         
+          <a href="files/CV Andrea Ramirez.pdf" download class="about__social-link about__social-link--cta">Descargar CV ↓</a>
+        </div>
+      </div>
+
+      <div class="about__text-col reveal">
+        <h2 class="about__title">Diseño con intención, estrategia y sensibilidad visual.</h2>
+        <div class="about__body">
+          <p>Soy diseñadora gráfica y artista con un profundo interés por el diseño editorial, la construcción de marcas y la ilustración. Mi trabajo busca crear soluciones visuales que comuniquen con claridad y al mismo tiempo generen una experiencia estética significativa.</p>
+          <p>Disfruto desarrollar proyectos que conecten la estrategia con la creatividad, cuidando cada detalle del proceso, desde la investigación y conceptualización hasta la producción final.</p>
+          <p>Creo que el diseño tiene la capacidad de transformar la manera en que las personas entienden, sienten y se relacionan con el mundo que las rodea.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROYECTOS
+  ============================================================ -->
+  <section class="projects" id="proyectos">
+
+    <!-- ── CATEGORÍA 1: EDITORIAL ──────────────────────────── -->
+    <div class="category reveal">
+      <div class="category__header">
+        <span class="category__index">I</span>
+        <h2 class="category__title">Diseño Editorial<br/>y de Información</h2>
+      </div>
+    </div>
+
+    <div class="projects__grid">
+
+      <!-- Proyecto 1 — Vangoghia (protagonista, ocupa más espacio) -->
+      <article class="project-card project-card--large reveal" data-project="vangoghia">
+        <div class="project-card__image-wrap">
+          <img src="images/projects/vangoghia-cover.png" alt="Vangoghia" class="project-card__image" />
+          <div class="project-card__placeholder"></div>
+          <div class="project-card__overlay">
+            <button class="project-card__open" onclick="openModal('vangoghia')">Ver proyecto</button>
+          </div>
+        </div>
+        <div class="project-card__meta">
+          <span class="project-card__type">Diseño editorial</span>
+          <span class="project-card__year">2024</span>
+        </div>
+        <h3 class="project-card__title">Vangoghia</h3>
+        <p class="project-card__excerpt">Revista editorial concebida como espacio de exploración artística e inspiración visual.</p>
+      </article>
+
+      <!-- Proyecto 2 — Folletos hospitalarios -->
+      <article class="project-card project-card--small reveal" data-project="folletos">
+        <div class="project-card__image-wrap">
+          <img src="images/projects/folletos-cover.jpg" alt="Folletos educativos" class="project-card__image" />
+          <div class="project-card__placeholder"></div>
+          <div class="project-card__overlay">
+            <button class="project-card__open" onclick="openModal('folletos')">Ver proyecto</button>
+          </div>
+        </div>
+        <div class="project-card__meta">
+          <span class="project-card__type">Diseño de información</span>
+          <span class="project-card__year">2026</span>
+        </div>
+        <h3 class="project-card__title">Folletos para niños hospitalizados</h3>
+        <p class="project-card__excerpt">Materiales educativos diseñados para continuar el aprendizaje durante la hospitalización.</p>
+      </article>
+
+      <!-- Proyecto 3 — Revistas para parejas -->
+      <article class="project-card project-card--medium reveal" data-project="revistas-parejas">
+        <div class="project-card__image-wrap">
+          <img src="images/projects/revistas-cover.png" alt="Revistas personalizadas" class="project-card__image" />
+    
+          <div class="project-card__placeholder"></div>
+          <div class="project-card__overlay">
+            <button class="project-card__open" onclick="openModal('revistas-parejas')">Ver proyecto</button>
+          </div>
+        </div>
+        <div class="project-card__meta">
+          <span class="project-card__type">Editorial freelance</span>
+          <span class="project-card__year">2026</span>
+        </div>
+        <h3 class="project-card__title">Revistas personalizadas para parejas</h3>
+        <p class="project-card__excerpt">Publicaciones únicas que transforman memorias compartidas en objetos editoriales.</p>
+      </article>
+
+    </div><!-- /projects__grid cat-1 -->
+
+    <!-- ── CATEGORÍA 2: BRANDING ───────────────────────────── -->
+    <div class="category reveal">
+      <div class="category__header">
+        <span class="category__index">II</span>
+        <h2 class="category__title">Diseño<br/>de Marca</h2>
+      </div>
+    </div>
+
+    <div class="projects__grid projects__grid--reversed">
+
+      <article class="project-card project-card--medium reveal" data-project="greenpack">
+        <div class="project-card__image-wrap">
+          <img src="images/projects/greenpack-cover.jpg" alt="GreenPack" class="project-card__image" />
+          <div class="project-card__placeholder"></div>
+          <div class="project-card__overlay">
+            <button class="project-card__open" onclick="openModal('greenpack')">Ver proyecto</button>
+          </div>
+        </div>
+        <div class="project-card__meta">
+          <span class="project-card__type">Identidad de marca</span>
+          <span class="project-card__year">2025</span>
+        </div>
+        <h3 class="project-card__title">GreenPack</h3>
+        <p class="project-card__excerpt">Identidad visual para marca de soluciones sostenibles. Sistema completo desde estrategia hasta manual.</p>
+      </article>
+
+      <article class="project-card project-card--large reveal" data-project="verne">
+        <div class="project-card__image-wrap">
+          <img src="images/projects/verne-cover.jpg" alt="Verne Study Club" class="project-card__image" />
+          <div class="project-card__placeholder"></div>
+          <div class="project-card__overlay">
+            <button class="project-card__open" onclick="openModal('verne')">Ver proyecto</button>
+          </div>
+        </div>
+        <div class="project-card__meta">
+          <span class="project-card__type">Branding y comunicación</span>
+          <span class="project-card__year">2025</span>
+        </div>
+        <h3 class="project-card__title">Verne Study Club</h3>
+        <p class="project-card__excerpt">Estrategia de marca, identidad visual y naming para proyecto educativo con acompañamiento activo.</p>
+      </article>
+
+    </div><!-- /projects__grid cat-2 -->
+
+    <!-- ── CATEGORÍA 3: ILUSTRACIÓN ────────────────────────── -->
+    <div class="category reveal">
+      <div class="category__header">
+        <span class="category__index">III</span>
+        <h2 class="category__title">Ilustración<br/>y Carteles</h2>
+      </div>
+    </div>
+
+    <div class="projects__grid">
+
+      <article class="project-card project-card--small reveal" data-project="bienal">
+        <div class="project-card__image-wrap">
+          <img src="images/projects/bienal-cover.jpg" alt="Carteles Bienal" class="project-card__image" />
+          <div class="project-card__placeholder"></div>
+          <div class="project-card__overlay">
+            <button class="project-card__open" onclick="openModal('bienal')">Ver proyecto</button>
+          </div>
+        </div>
+        <div class="project-card__meta">
+          <span class="project-card__type">Cartel</span>
+          <span class="project-card__year">2026</span>
+        </div>
+        <h3 class="project-card__title">Carteles para la Bienal</h3>
+        <p class="project-card__excerpt">Exploración de lenguajes visuales para temáticas ambiental y de género.</p>
+      </article>
+
+      <article class="project-card project-card--small reveal" data-project="abecedario">
+        <div class="project-card__image-wrap">
+          <img src="images/projects/abecedario-cover.png" alt="Juego abecedario" class="project-card__image" />
+          <div class="project-card__placeholder"></div>
+          <div class="project-card__overlay">
+            <button class="project-card__open" onclick="openModal('abecedario')">Ver proyecto</button>
+          </div>
+        </div>
+        <div class="project-card__meta">
+          <span class="project-card__type">Ilustración educativa</span>
+          <span class="project-card__year">2025</span>
+        </div>
+        <h3 class="project-card__title">Ilustraciones para juego interactivo</h3>
+        <p class="project-card__excerpt">Sistema de ilustración para aprendizaje del abecedario en nivel inicial.</p>
+      </article>
+
+      <article class="project-card project-card--large reveal" data-project="maldicion">
+        <div class="project-card__image-wrap">
+          <img src="images/projects/maldicion-cover.png" alt="Mi amada maldición" class="project-card__image" />
+        
+          <div class="project-card__placeholder"></div>
+          <div class="project-card__overlay">
+            <button class="project-card__open" onclick="openModal('maldicion')">Ver proyecto</button>
+          </div>
+        </div>
+        <div class="project-card__meta">
+          <span class="project-card__type">Ilustración editorial</span>
+          <span class="project-card__year">2024</span>
+        </div>
+        <h3 class="project-card__title">Mi amada maldición</h3>
+        <p class="project-card__excerpt">Portada de poemario en acuarela. De lo analógico al editorial contemporáneo.</p>
+      </article>
+
+    </div><!-- /projects__grid cat-3 -->
+
+  </section><!-- /proyectos -->
+
+  <!-- ============================================================
+       CONTACTO
+  ============================================================ -->
+  <section class="contact" id="contacto">
+    <div class="contact__inner">
+      <div class="contact__left reveal">
+        <span class="section-label">Contacto</span>
+        <h2 class="contact__title">Creemos algo<br/>significativo<br/>juntos.</h2>
+        <p class="contact__text">Siempre estoy abierta a nuevos proyectos, colaboraciones y oportunidades creativas.</p>
+
+        <div class="contact__links">
+          <!-- REEMPLAZA: tu correo real -->
+          <a href="mailto:andrea.diseñadora@gmail.com" class="contact__link">
+            <span class="contact__link-label">Correo</span>
+            <span class="contact__link-value">andrea.diseñadora@gmail.com →</span>
+          </a>
+          <!-- REEMPLAZA: tu URL de LinkedIn -->
+          <a href="https://www.linkedin.com/in/andrea-ramirez-7826b732b/" target="_blank" class="contact__link">
+            <span class="contact__link-label">LinkedIn</span>
+            <span class="contact__link-value">Andrea Ramírez →</span>
+          </a>
+          <a href="https://instagram.com/andy_rv5" target="_blank" class="contact__link">
+            <span class="contact__link-label">Instagram</span>
+            <span class="contact__link-value">@andy_rv5 →</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact__right reveal">
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Correo</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="tu@correo.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar mensaje</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__name">Andrea Ramírez Velázquez</span>
+      <span class="footer__copy">© 2026 — Todos los derechos reservados</span>
+      <span class="footer__made">Diseño y desarrollo propio</span>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       MODALES DE PROYECTOS
+  ============================================================ -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal__close" onclick="closeModal()">✕</button>
+      <div class="modal__content" id="modalContent">
+        <!-- Contenido inyectado por JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
